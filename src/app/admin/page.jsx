@@ -517,7 +517,7 @@ export default function Home() {
           },
           body: JSON.stringify({
             file: imageBase64,
-            upload_preset: "skybound_uploads", // Your Cloudinary upload preset
+            upload_preset: "logitrack_uploads", // Your Cloudinary upload preset
           }),
         }
       );

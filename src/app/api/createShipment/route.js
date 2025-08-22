@@ -110,16 +110,16 @@ export const POST = async (req) => {
 
     let mailOptions = {
       from: {
-        name: "SkyboundExpress Shipping",
+        name: "LogiTrackExpress Shipping",
         address: "contact@logitrackexpress.com",
       },
       to: shipmentData.receiverEmail,
       cc: shipmentData.senderEmail,
       subject: `Shipment Confirmation - Tracking #${trackingNumber}`,
-      messageId: `${trackingNumber}-${Date.now()}@skyboundexpress.com`,
+      messageId: `${trackingNumber}-${Date.now()}@logitrackexpress.com`,
       headers: {
-        "Feedback-ID": `${trackingNumber}:shipping:skyboundexpress:1`,
-        "List-Unsubscribe": `<https://skyboundexpress.com/unsubscribe/${trackingNumber}>, <mailto:unsubscribe@skyboundexpress.com?subject=unsubscribe_${trackingNumber}>`,
+        "Feedback-ID": `${trackingNumber}:shipping:logitrackexpress:1`,
+        "List-Unsubscribe": `<https://logitrackexpress.com/unsubscribe/${trackingNumber}>, <mailto:unsubscribe@logitrackexpress.com?subject=unsubscribe_${trackingNumber}>`,
         "List-Unsubscribe-Post": "List-Unsubscribe=One-Click",
       },
       html: `
@@ -203,13 +203,13 @@ export const POST = async (req) => {
               </div>
 
               <p style="color: #666666; font-size: 14px; margin-top: 30px;">
-                Thank you for choosing SkyboundExpress. If you have any questions, please contact our customer service at contact@logitrackexpress.com
+                Thank you for choosing LogiTrackExpress. If you have any questions, please contact our customer service at contact@logitrackexpress.com
               </p>
             </div>
             
             <div style="text-align: center; margin-top: 20px; color: #999999; font-size: 12px;">
               <p>This is an automated message, please do not reply to this email.</p>
-              <p>© ${new Date().getFullYear()} SkyboundExpress. All rights reserved.</p>
+              <p>© ${new Date().getFullYear()} LogiTrackExpress. All rights reserved.</p>
               <p>
                 <a href="https://logitrackexpress.com/privacy" style="color: #666666; text-decoration: underline;">Privacy Policy</a> | 
                 <a href="https://logitrackexpress.com/terms" style="color: #666666; text-decoration: underline;">Terms of Service</a>
@@ -242,11 +242,11 @@ Shipment Details:
 
 Track your shipment at: https://logitrackexpress.com/shipment?num=${trackingNumber}
 
-Thank you for choosing SkyboundExpress.
+Thank you for choosing LogiTrackExpress.
 
 For questions, contact us at contact@logitrackexpress.com
 
-© ${new Date().getFullYear()} SkyboundExpress. All rights reserved.
+© ${new Date().getFullYear()} LogiTrackExpress. All rights reserved.
       `,
     };
 
