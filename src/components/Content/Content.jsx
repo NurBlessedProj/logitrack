@@ -616,7 +616,7 @@ function Content() {
                   <Image
                     width={400}
                     height={400}
-                    src="https://images.pexels.com/photos/5731866/pexels-photo-5731866.jpeg"
+                    src="https://img.freepik.com/close-up-shopping-cart_1048944-11720808.jpg?w=1480"
                     className="w-full h-full object-cover"
                     alt="Happy pet after transportation"
                   />
@@ -625,7 +625,7 @@ function Content() {
                   <Image
                     width={400}
                     height={400}
-                    src="https://images.pexels.com/photos/7210748/pexels-photo-7210748.jpeg"
+                    src="https://img.freepik.com/free-photo/little-cat-sitting-grass_1150-17020.jpg?t=st=1755896944~exp=1755900544~hmac=14edd04949befd69069ab50efdeeab6772558c4aa0d5b65144c9deb9c4813cfc&w=1480"
                     className="w-full h-full object-cover"
                     alt="Pet in travel carrier"
                   />
